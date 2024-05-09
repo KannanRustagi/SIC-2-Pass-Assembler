@@ -1,8 +1,6 @@
-## ASSIGNMENT-1
+# SIC-2-Pass-Assembler
 Name- Kannan Rustagi
 Roll no.-210101054
-
-========================================================================================================================
 
 ## INSTRUCTIONS FOR RUNNING THE CODE
 1. The environment required for running the code is Linux system with g++ compiler installed.
@@ -36,11 +34,9 @@ Roll no.-210101054
 
 4. The assembler uses stringstream for handling strings in input.
 
-========================================================================================================================
-
 The code is divided into two main parts: Pass 1 and Pass 2. Here's a brief overview of the main components:
 
-# Pass 1:
+## Pass 1:
 - Symbol Table: Uses an unordered map (symbolTable) to store labels and their corresponding addresses which are later referred in pass 2 to generate machine code.
 
 - Intermediate File Generation: Parses the input source program line by line and generates an intermediate file (intermediate.txt) with the location counter, label, mnemonic, and operand fields. 
@@ -50,7 +46,7 @@ The code is divided into two main parts: Pass 1 and Pass 2. Here's a brief overv
 - Error Checking: Checks for errors in the input file, such as duplicate symbols, invalid opcodes
 
 
-# Pass 2:
+## Pass 2:
 - Output File Generation: Generates the final output file (output.txt) containing the machine code instructions.
 
 - Basically, we get the corresponding opcode of the mnemonic present in the instruction from the opcode map and for instructions with operands, the code checks if the operand is present in the symbol table. If yes, it retrieves the operand's address. If the operand is indexed, it also modifies the operand's address to set the indexing bit.
