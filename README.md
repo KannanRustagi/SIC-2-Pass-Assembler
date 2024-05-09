@@ -1,6 +1,4 @@
 # SIC-2-Pass-Assembler
-Name- Kannan Rustagi
-Roll no.-210101054
 
 ## INSTRUCTIONS FOR RUNNING THE CODE
 1. The environment required for running the code is Linux system with g++ compiler installed.
@@ -19,8 +17,6 @@ Roll no.-210101054
 
 7. To run the file, type
 				./a.out
-
-========================================================================================================================
 
 ## CODE EXPLANATION
 1. The assembler uses File I/O Management through C++. If any error in opening or creating files
